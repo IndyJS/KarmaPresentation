@@ -17,3 +17,17 @@ Default configuration:
 
 CI and Coverage configuration:
 `karma start karma.tc.conf.js`
+
+####Potential Issues
+If Karma can't find Chrome (most likely on 64bit Windows), the easiest solution is to set 
+an environment variable with the path to the Chrome executable.
+
+`SET CHROME_BIN=C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`
+
+This works for all the browser plugins:
+ - FIREFOX_BIN
+ - IE_BIN
+ - PHANTOMJS_BIN
+ - CHROME_CANARY_BIN (if you're testing on the edge)
+ 
+ 
